@@ -1,0 +1,205 @@
+#+TITLE: Labbook Jonas PhD on MLS 
+#+LATEX_HEADER: \usepackage[margin=2cm,a4paper]{geometry}
+#+STARTUP: overview indent
+#+TAGS: Jonas(J) noexport(n) deprecated(d)
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+SEQ_TODO: TODO(t!) STARTED(s!) WAITING(w!) | DONE(d!) CANCELLED(c!) DEFERRED(f!)
+* Description of the experimental platform
+  + Describe 
+  + Describe 
+
+* 2016-04-04 EXAMPLE GRAPHS R
+** Just Organizing
+Load the data:
+
+#+begin_src R :results output :session :exports both
+  df2 <- read.csv("strong_scalability_data_Dissertation/allTogether_with_Turing_2.csv", sep=" ");
+  names(df2) <- c("Time", "Threads", "Disk", "Pinned", "Scalability", "Machine");
+  df2 <- df2[df2$Disk == "SSD", ];
+  df2 <- df2[df2$Scalability == "Strong", ];
+  df2 <- df2[df2$Pinned == "Pin", ];
+#+end_src
+
+#+RESULTS:
+
+#+begin_src R :results output :session :exports both
+summary (df2[df2$Thread == 1,]$Time);
+sequential_time = mean(df2[df2$Thread == 1 & df2$Machine == "bali",]$Time);
+sequential_time
+#+end_src
+
+#+RESULTS:
+:    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+:   484.5   490.3   707.4   644.1   792.0   793.0
+: [1] 496.0953
+
+#+begin_src R :results output :session :exports both
+library(plyr)
+cdata <- ddply(df2[df2$Threads != 1,], .(Threads, Disk, Pinned, Machine), summarise,
+               N = length(Time),
+               time_mean = mean(Time),
+               time_se = 3 * sd(Time) / sqrt(N),
+               sequential_time = mean(df2[df2$Threads == 1 & df2$Machine == Machine,]$Time),
+               speedup_mean = sequential_time/mean(Time),
+               speedup_se = 3 * sd(sequential_time/Time) / sqrt(N));
+cdata
+#+end_src
+
+#+RESULTS:
+#+begin_example
+  Threads Disk Pinned Machine  N time_mean    time_se sequential_time
+1       2  SSD    Pin    bali 30  289.7503 6.05618067        496.0953
+2       2  SSD    Pin  turing 30  388.4730 0.39249323        792.0303
+3       4  SSD    Pin    bali 30  151.7505 0.50277448        496.0953
+4       4  SSD    Pin  turing 30  222.2863 0.07860519        792.0303
+5       8  SSD    Pin    bali 30   79.9273 0.22343101        496.0953
+6       8  SSD    Pin  turing 30  182.1544 5.69851655        792.0303
+7      16  SSD    Pin    bali 30   53.0513 0.15579382        496.0953
+8      16  SSD    Pin  turing 30  743.2732 9.97565459        792.0303
+  speedup_mean  speedup_se
+1     1.712147 0.035278607
+2     2.038830 0.002059055
+3     3.269150 0.010766602
+4     3.563109 0.001260241
+5     6.206832 0.017204858
+6     4.348126 0.144101927
+7     9.351238 0.027443202
+8     1.065598 0.015460372
+#+end_example
+
+#+begin_src R :results output :session :exports both
+s = c(1, 2, 4, 8, 16)
+e = c(1, 1, 1, 1, 1)
+ideal = data.frame(s, s, s, e)
+names(ideal) <- c("P", "Threads", "speedup_mean", "Efficiency")
+ideal$Threads <- as.integer(ideal$Threads);
+ideal$Pinned <- NA
+ideal$Machine <- NA
+ideal
+#+end_src
+
+#+RESULTS:
+:    P Threads speedup_mean Efficiency Pinned Machine
+: 1  1       1            1          1     NA      NA
+: 2  2       2            2          1     NA      NA
+: 3  4       4            4          1     NA      NA
+: 4  8       8            8          1     NA      NA
+: 5 16      16           16          1     NA      NA
+
+#+begin_src R :results output graphics :file img/speedup-with-variability-jonas-diss.pdf :exports both :width 6 :height 4 :session
+
+library(ggplot2)
+p <- ggplot(cdata, aes(x=Threads, y=speedup_mean, color=Machine)) +
+      geom_line(data=ideal, aes(group=Machine)) +
+      geom_point(size=4, alpha=.5) +
+      geom_line(aes(group=Machine)) +
+      theme_bw() +
+      ylim(0,NA) +
+     #xlim(0,NA) +
+      scale_x_continuous(breaks=s) +
+      geom_errorbar(aes(ymax = speedup_mean+speedup_se, ymin=speedup_mean-speedup_se), width=.5);
+p
+#+end_src
+
+#+RESULTS:
+[[file:img/speedup-with-variability-jonas-diss.pdf]]
+
+** New version Strong SpeedUp
+#+begin_src R :results output graphics :file img/finalImgs/strong-speedup-with-variabilityTuring6-jonas-diss.pdf :exports both :width 6 :height 4 :session
+df3 <- read.csv("strong_scalability_data_Dissertation/allTogether_with_Turing_2.csv", sep=" ");
+names(df3) <- c("Time", "Threads", "Disk", "Pinned", "Scalability", "Machine");
+df3 <- df3[df3$Disk == "SSD", ];
+df3 <- df3[df3$Scalability == "Strong", ];
+df3 <- df3[df3$Pinned == "Free", ];
+
+summary (df3[df3$Thread == 1,]$Time);
+sequential_time = mean(df3[df3$Thread == 1 & df3$Machine == "bali",]$Time);
+library(plyr);
+cdata <- ddply(df3[df3$Threads != 1,], .(Threads, Disk, Pinned, Machine), summarise,
+               N = length(Time),
+               time_mean = mean(Time),
+               time_se = 3 * sd(Time) / sqrt(N),
+               sequential_time = min(df3[df3$Threads == 1 & df3$Machine == Machine,]$Time),
+               SpeedUp = sequential_time/min(Time),
+               speedup_se = 3 * sd(sequential_time/Time) / sqrt(N));
+
+s = c(1, 2, 4, 8, 16);
+e = c(1, 1, 1, 1, 1);
+ideal = data.frame(s, s, s, e);
+names(ideal) <- c("P", "Threads", "SpeedUp", "Efficiency");
+ideal$Threads <- as.integer(ideal$Threads);
+ideal$Pinned <- NA;
+ideal$Machine <- NA;
+
+library(ggplot2)
+p <- ggplot(cdata, aes(x=Threads, y=SpeedUp, color=Machine)) +
+  geom_line(data=ideal, aes(group=Machine), color="black",  alpha=.7) +
+  geom_point(size=2, alpha=.9) +
+  geom_line(aes(group=Machine)) +
+  ggtitle("SpeedUp - Strong Scaling") +
+  theme_bw() +
+  scale_y_continuous(breaks=s) +
+  scale_x_continuous(breaks=s) +
+  geom_errorbar(aes(ymax = SpeedUp+speedup_se, ymin=SpeedUp-speedup_se), width=.5);
+print(p);
+
+#+end_src
+
+#+RESULTS:
+[[file:img/finalImgs/strong-speedup-with-variabilityTuring6-jonas-diss.pdf]]
+
+** New Version Strong Efficiency
+#+begin_src R :results output graphics :file img/finalImgs/strong-efficiecy-with-variabilityTuring6-jonas-diss.pdf :exports both :width 6 :height 4 :session
+df <- read.csv("strong_scalability_data_Dissertation/allTogether_with_Turing_2.csv", header=FALSE, sep=" ")
+names(df) <- c("Time", "Threads", "Disk", "Pinned", "Scalability", "Machine")
+df2 <- df[df$Disk == "SSD" & df$Scalability == "Strong" & df$Pinned == "Free" ,]
+library(plyr)
+cdata <- ddply(df2[df2$Threads != 20,], .(Threads, Disk, Pinned, Machine), summarise,
+               N = length(Time),
+               time_mean = mean(Time),
+               time_se = 3 * sd(Time) / sqrt(N),
+               seq_time = min(df2[df2$Threads == 1 & df2$Pinned == Pinned & df2$Machine == Machine,]$Time),
+               SpeedUp = seq_time/min(Time),
+               Efficiency= min(SpeedUp/Threads),
+               Efficiency_se = 3 * sd((seq_time/Time)/Threads) / sqrt(N));
+
+print (cdata)
+s = c(1, 2, 4, 8, 16)
+e = c(1, 1, 1, 1, 1)
+sss = c(1, 0.85, 0.7, 0.55, 0.4, 0.25, 0.1)
+ideal = data.frame(s, s, e)
+names(ideal) <- c("P", "Threads", "Efficiency")
+ideal$Threads <- as.integer(ideal$Threads);
+ideal$Machine <- NA
+
+library(ggplot2)
+p <- ggplot(cdata, aes(x=Threads, y=Efficiency, color=Machine)) +
+  geom_line(data=ideal, aes(group=Machine), alpha=.7) +
+  geom_point(size=2, alpha=.9) +
+  geom_line(aes(group=Machine)) +
+  theme_bw() +
+  ggtitle("Efficiency - Strong Scaling") +
+  scale_x_continuous(breaks=s) +
+  scale_y_continuous(breaks=sss) +
+  geom_errorbar(aes(ymax = Efficiency+Efficiency_se, ymin=Efficiency-Efficiency_se), width=.5);
+print(p);
+#+end_src
+
+#+RESULTS:
+[[file:img/finalImgs/strong-efficiecy-with-variabilityTuring6-jonas-diss.pdf]]
+
+* 2016-04-04 To export to PDF
+
+Next code block will be exported to =file.png=
+
+#+begin_src R :results output graphics :file file.png :exports both :width 600 :height 400 :session
+
+#+end_src
+
+Next code block will be exported to =file.pdf=. See witdth and height in
+incles, not pixels.
+
+#+begin_src R :results output graphics :file file.pdf :exports both :width 6 :height 4 :session
+
+#+end_src
