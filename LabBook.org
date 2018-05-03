@@ -203,3 +203,38 @@ incles, not pixels.
 #+begin_src R :results output graphics :file file.pdf :exports both :width 6 :height 4 :session
 
 #+end_src
+* 2018-05 Papers PhD Brief
+** 2018-05-03 Mixed Task Scheduling and Resource Allocation Problems 2000
+(a bit confuse article)
+The paper presents a constraint-based approach for mixed task
+scheduling and resource problem. Two types of constraints: temportal
+constrained problem and/or time and resource constrained problem.
+ 
+However, since resource constraints are modelled by temporal
+constraints, the semantics of the constraints is forgotten 
+and the algorithm cannot consider the specificity of 
+TSRA (see section 4).
+
+REF:
+@article{huguet2000mixed,
+  title={Mixed task scheduling and resource allocation problems},
+  author={Huguet, Marie-Jos{\'e} and Lopez, Pierre},
+  journal={Proceedings of CP-AI-OR’00, Paderborn, Germany},
+  pages={71--79},
+  year={2000}
+}
+** 2018-05-03 Multiscale computing (From the Academy) PNAS 2001
+ 
+
+
+REF:
+@article{kobayashi2001multiscale,
+  title={Multiscale computing},
+  author={Kobayashi, Mei and Irino, Toshio and Sweldens, Wim},
+  journal={Proceedings of the National Academy of Sciences},
+  volume={98},
+  number={22},
+  pages={12344--12345},
+  year={2001},
+  publisher={National Acad Sciences}
+}
