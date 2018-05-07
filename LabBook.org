@@ -257,16 +257,17 @@ Look again page 6
 
 Some phrases
 "A chief characteristic of next-generation computing systems is the
-prevalence of parallelism at multiple levels of granularity."
+prevalence of parallelism at multiple levels of granularity."page 1 - 1
 
 "the overall goal of the scheduler is to map tasks to processors so
 that dependencies in the graph are not violated and execution time
-and/or space is minimized."
+and/or space is minimized." page 2 - 1
 
 "The idea of multiscale scheduling, then, is to integrate cooperative 
 and competitive scheduling methods into a unified framework that takes
 account of both levels to minimize ERT of competitively scheduled
-jobs while permitting their decomposition into cooperatively scheduled tasks."
+jobs while permitting their decomposition into cooperatively scheduled
+tasks." page 2 - 5
 
 
 REF:
