@@ -224,8 +224,20 @@ REF:
   year={2000}
 }
 ** 2018-05-03 Multiscale computing (From the Academy) PNAS 2001
- 
 
+wavelet approach
+Multiscale Computer Graphics
+
+Paper objective: describe how MSC can help scientists understand
+complex data through two examples: one from acoustical signal
+processing and second from computer graphics.
+
+Some phrases:
+"the field has undergone tremendous advances during the past decade
+because of the increase in inexpensive, powerful hardware." 
+"MSC is used in many disciplines, but its presence is often obscured,
+because it appears unter several different names depending on the
+field of application."
 
 REF:
 @article{kobayashi2001multiscale,
