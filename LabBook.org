@@ -276,3 +276,27 @@ REF:
   author={Blelloch, Guy E and Blum, Lenore and Harchol-Balter, Mor and Harper, Robert},
   year={2007}
 }
+** 2018-05-07 Two level adaptive scheduling JSSPP 2009 - not working
+** 2018-05-07 Optimized Grid Scheduling Using Two Level Decision Algorithm (TLDA) 2010
+
+Combined schedulling starting by ACO (Ant Colony Optimization) and 
+then GA (Genetic algoritim)
+
+"TLDA (Two Level Decision Algorithm) shows improvement over nature
+based algorithms applied independently"
+"The overhead of decision making time can be neglected as 
+compared to improvement in execution time"
+
+The work shows that the overhead caused by the decision phase of the
+schedulling can be neglected considering the execution time improvement.
+
+
+REF:
+@inproceedings{umale2010optimized,
+  title={Optimized grid scheduling using two level decision algorithm (TLDA)},
+  author={Umale, Jayant and Mahajan, Sunita},
+  booktitle={Parallel Distributed and Grid Computing (PDGC), 2010 1st International Conference on},
+  pages={78--82},
+  year={2010},
+  organization={IEEE}
+}
