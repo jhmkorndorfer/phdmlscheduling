@@ -250,3 +250,28 @@ REF:
   year={2001},
   publisher={National Acad Sciences}
 }
+** 2018-05-07 Multiscale Scheduling: Integrating Competitive and Cooperative Scheduling in Theory and Practice 2007
+Look again
+Look again page 6
+
+
+Some phrases
+"A chief characteristic of next-generation computing systems is the
+prevalence of parallelism at multiple levels of granularity."
+
+"the overall goal of the scheduler is to map tasks to processors so
+that dependencies in the graph are not violated and execution time
+and/or space is minimized."
+
+"The idea of multiscale scheduling, then, is to integrate cooperative 
+and competitive scheduling methods into a unified framework that takes
+account of both levels to minimize ERT of competitively scheduled
+jobs while permitting their decomposition into cooperatively scheduled tasks."
+
+
+REF:
+@article{blelloch2007multiscale,
+  title={Multiscale Scheduling: Integrating Competitive and Cooperative Scheduling in Theory and in Practice},
+  author={Blelloch, Guy E and Blum, Lenore and Harchol-Balter, Mor and Harper, Robert},
+  year={2007}
+}
