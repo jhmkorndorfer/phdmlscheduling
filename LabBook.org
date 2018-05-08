@@ -300,3 +300,5 @@ REF:
   year={2010},
   organization={IEEE}
 }
+** 2018-05-08 Compilers and More: Programming at Exascale - report - 2011
+Levels of paralelism
