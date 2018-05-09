@@ -302,3 +302,22 @@ REF:
 }
 ** 2018-05-08 Compilers and More: Programming at Exascale - report - 2011
 Levels of paralelism
+** 2018-05-09 A multi-level scheduler for batch jobs on grids - 2011
+Published online: 22 February 2011
+© Springer Science+Business Media, LLC 2011
+
+
+
+
+
+REF:
+@article{pasquali2011multi,
+  title={A multi-level scheduler for batch jobs on grids},
+  author={Pasquali, Marco and Baraglia, Ranieri and Capannini, Gabriele and Ricci, Laura and Laforenza, Domenico},
+  journal={The Journal of Supercomputing},
+  volume={57},
+  number={1},
+  pages={81--98},
+  year={2011},
+  publisher={Springer}
+}
