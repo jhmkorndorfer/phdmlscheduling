@@ -303,13 +303,60 @@ REF:
 ** 2018-05-08 Compilers and More: Programming at Exascale - report - 2011
 Levels of paralelism
 ** 2018-05-09 A multi-level scheduler for batch jobs on grids - 2011
+
+*PAPER WITH GOOD STRUCTURE*
+  
+They proposes a two-level scheduler for dynamically scheduling a
+continuous stream of sequential and multi-threaded batch jobs on
+grids, "made up of interconnected clusters of heterogeneous
+single-processor and/or symmetric multi- processor machines."
+
+"At the top of the hierarchy a lightweight meta-scheduler (MS) clas-
+sifies incoming jobs according to their requirements, and schedules them among the
+underlying resources balancing the workload. At cluster level a Flexible Backfilling
+algorithm carries out the job machine associations by exploiting dynamic informa-
+tion about the environment."
+
+"In this paper we describe the study conducted to develop a two-level queue-based
+scheduling framework to schedule a continuous stream of independent batch jobs in
+grids."
+
+"Moreover, *our scheduler can be classified as static*, this meaning that jobs are as-
+signed to the appropriate resources before their execution begins. Once started, they
+run on the same resources without interruption."
+
+"The OAR and KOALA queue-based multi-level schedulers are described respec-
+tively in 13 and 14. OAR is based on backfilling."
+
+*Meta-schedule.* Defines which job goes to which cluster based on two
+functions *Load* and *Ordering*. *Load* aims to dispatch jobs among clusters
+considering their workload by assigning a job to the less loaded
+cluster. *Ordering* considers the priority of the jobs to balance the number of jobs
+with same priority in each cluster queue.
+
+*Local-scheduler.* "Flexible Backfilling algorithm
+that selects the machines suitable to perform a job considering the number of proces-
+sors and the licenses exploitable on a machine."
+
+"MS Heuristics: MS classifies submitted jobs and dispatches them to LSs. At LS
+level, scheduling decision are made by means of a Flexible Backfilling algorithm,
+which exploits job priorities computed by MS. Any job prioritization is performed
+at LS level. Higher the job priority is, higher the position of the job in LSs’ queues
+is."
+
+"The proposed solution aims to schedule arriving jobs balancing the
+clusters workload, respecting the job running require-ments 
+and deadlines, and optimizing the utilization of hardware and software
+resources."
+
+"The conducted simulation tests demonstrated that the investigated
+solution can be a viable one. In particular, we show that using a
+lightweight component like MS joined with light-ening LSs, carries 
+out good results as using more complex LSs."
+
+
 Published online: 22 February 2011
 © Springer Science+Business Media, LLC 2011
-
-
-
-
-
 REF:
 @article{pasquali2011multi,
   title={A multi-level scheduler for batch jobs on grids},
