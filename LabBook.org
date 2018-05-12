@@ -392,6 +392,14 @@ costs experienced by the application (maximize locality nd affinity)"
 the load on the available processors may actually make the overall 
 performance worse by increasing the communication time."
 
+"The load balancer needs to know how far from each other the tasks are
+mapped, so that it can reduce the communication costs."
+
+"In order to efficiently utilize a parallel machine, a load balancing
+algorithm must consider not only the computational load of the
+application, but also the existing asymmetries in memory latencies and
+bandwidth, and network communication costs."
+
 *REF:*
 @inproceedings{pilla2012hierarchical,
   title={A hierarchical approach for load balancing on parallel multi-core systems},
