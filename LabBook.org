@@ -225,7 +225,7 @@ TSRA (see section 4).
 }
 ** 2018-05-03 Multiscale computing (From the Academy) PNAS 2001
 
-wavelet approach
+Wavelet approach
 Multiscale Computer Graphics
 
 Paper objective: describe how MSC can help scientists understand
@@ -240,16 +240,22 @@ because it appears unter several different names depending on the
 field of application."
 
 *REF:*
-@article{kobayashi2001multiscale,
-  title={Multiscale computing},
-  author={Kobayashi, Mei and Irino, Toshio and Sweldens, Wim},
-  journal={Proceedings of the National Academy of Sciences},
-  volume={98},
-  number={22},
-  pages={12344--12345},
-  year={2001},
-  publisher={National Acad Sciences}
+@article {Kobayashi12344,
+	author = {Kobayashi, Mei and Irino, Toshio and Sweldens, Wim},
+	title = {Multiscale computing},
+	volume = {98},
+	number = {22},
+	pages = {12344--12345},
+	year = {2001},
+	doi = {10.1073/pnas.231384298},
+	publisher = {National Academy of Sciences},
+	abstract = {Multiscale computing (MSC) involves the computation, manipulation, and analysis of information at different resolution levels. Widespread use of MSC algorithms and the discovery of important relationships between different approaches to implementation were catalyzed, in part, by the recent interest in wavelets. We present two examples that demonstrate how MSC can help scientists understand complex data. The first is from acoustical signal processing and the second is from computer graphics. MSC,multiscale computing},
+	issn = {0027-8424},
+	URL = {http://www.pnas.org/content/98/22/12344},
+	eprint = {http://www.pnas.org/content/98/22/12344.full.pdf},
+	journal = {Proceedings of the National Academy of Sciences}
 }
+
 ** 2018-05-07 Multiscale Scheduling: Integrating Competitive and Cooperative Scheduling in Theory and Practice 2007
 Look again
 Look again page 6
@@ -277,7 +283,7 @@ tasks." page 2 - 5
   author={Blelloch, Guy E and Blum, Lenore and Harchol-Balter, Mor and Harper, Robert},
   year={2007}
 }
-** 2018-05-07 Two level adaptive scheduling JSSPP 2009 - not working
+** 2018-05-07 Two level adaptive scheduling JSSPP 2009 - *Not Working*
 ** 2018-05-07 Optimized Grid Scheduling Using Two Level Decision Algorithm (TLDA) 2010
 
 Combined schedulling starting by ACO (Ant Colony Optimization) and 
@@ -455,8 +461,6 @@ mathematical model of this environment."
   year={2014}
 }
 ** 2018-05-15 An adaptive and hierarchical task scheduling scheme for multi-core clusters 2014
-
-
 *REF:*
 @article{wang2014adaptive,
   title={An adaptive and hierarchical task scheduling scheme for multi-core clusters},
@@ -468,8 +472,6 @@ mathematical model of this environment."
   year={2014},
   publisher={Elsevier}
 }
-
-
 
 ** 2018-05-15 Multi-stage resource-aware scheduling for data centers with heterogeneous servers 2018
 
@@ -495,4 +497,112 @@ mathematical model of this environment."
   pages={251--267},
   year={2018},
   publisher={Springer}
+}
+
+*REF:*
+@article{wang2014adaptive,
+  title={An adaptive and hierarchical task scheduling scheme for multi-core clusters},
+  author={Wang, Yizhuo and Zhang, Yang and Su, Yan and Wang, Xiaojun and Chen, Xu and Ji, Weixing and Shi, Feng},
+  journal={Parallel Computing},
+  volume={40},
+  number={10},
+  pages={611--627},
+  year={2014},
+  publisher={Elsevier}
+}
+
+*REF:*
+@inproceedings{hansen2014heuristics,
+  title={Heuristics for robust allocation of resources to parallel applications with uncertain execution times in heterogeneous systems with uncertain availability},
+  author={Hansen, Timothy and Ciorba, Florina M and Maciejewski, Anthony A and Siegel, Howard Jay and Srivastava, Srishti and Banicescu, Ioana},
+  booktitle={Proceedings of the World Congress on Engineering},
+  volume={1},
+  year={2014}
+}
+
+*REF:*
+@inproceedings{ciorba2012combined,
+  title={A combined dual-stage framework for robust scheduling of scientific applications in heterogeneous environments with uncertain availability},
+  author={Ciorba, Florina M and Hansen, Timothy and Srivastava, Srishti and Banicescu, Ioana and Maciejewski, Anthony A and Siegel, Howard Jay},
+  booktitle={Parallel and Distributed Processing Symposium Workshops \& PhD Forum (IPDPSW), 2012 IEEE 26th International},
+  pages={193--207},
+  year={2012},
+  organization={IEEE}
+}
+
+*REF:*
+@inproceedings{pilla2012hierarchical,
+  title={A hierarchical approach for load balancing on parallel multi-core systems},
+  author={Pilla, Laercio L and Ribeiro, Christiane Pousa and Cordeiro, Daniel and Mei, Chao and Bhatele, Abhinav and Navaux, Philippe OA and Broquedis, Francois and Mehaut, Jean-Francois and Kale, Laxmikant V},
+  booktitle={Parallel Processing (ICPP), 2012 41st International Conference on},
+  pages={118--127},
+  year={2012},
+  organization={IEEE}
+}
+
+*REF:*
+@article{pasquali2011multi,
+  title={A multi-level scheduler for batch jobs on grids},
+  author={Pasquali, Marco and Baraglia, Ranieri and Capannini, Gabriele and Ricci, Laura and Laforenza, Domenico},
+  journal={The Journal of Supercomputing},
+  volume={57},
+  number={1},
+  pages={81--98},
+  year={2011},
+  publisher={Springer}
+}
+
+*REF:*
+@inproceedings{umale2010optimized,
+  title={Optimized grid scheduling using two level decision algorithm (TLDA)},
+  author={Umale, Jayant and Mahajan, Sunita},
+  booktitle={Parallel Distributed and Grid Computing (PDGC), 2010 1st International Conference on},
+  pages={78--82},
+  year={2010},
+  organization={IEEE}
+}
+
+*REF:*
+@article{blelloch2007multiscale,
+  title={Multiscale Scheduling: Integrating Competitive and Cooperative Scheduling in Theory and in Practice},
+  author={Blelloch, Guy E and Blum, Lenore and Harchol-Balter, Mor and Harper, Robert},
+  year={2007}
+}
+
+*REF:*
+@article{kobayashi2001multiscale,
+  title={Multiscale computing},
+  author={Kobayashi, Mei and Irino, Toshio and Sweldens, Wim},
+  journal={Proceedings of the National Academy of Sciences},
+  volume={98},
+  number={22},
+  pages={12344--12345},
+  year={2001},
+  publisher={National Acad Sciences}
+}
+
+*REF:*
+@article {Kobayashi12344,
+	author = {Kobayashi, Mei and Irino, Toshio and Sweldens, Wim},
+	title = {Multiscale computing},
+	volume = {98},
+	number = {22},
+	pages = {12344--12345},
+	year = {2001},
+	doi = {10.1073/pnas.231384298},
+	publisher = {National Academy of Sciences},
+	abstract = {Multiscale computing (MSC) involves the computation, manipulation, and analysis of information at different resolution levels. Widespread use of MSC algorithms and the discovery of important relationships between different approaches to implementation were catalyzed, in part, by the recent interest in wavelets. We present two examples that demonstrate how MSC can help scientists understand complex data. The first is from acoustical signal processing and the second is from computer graphics. MSC,multiscale computing},
+	issn = {0027-8424},
+	URL = {http://www.pnas.org/content/98/22/12344},
+	eprint = {http://www.pnas.org/content/98/22/12344.full.pdf},
+	journal = {Proceedings of the National Academy of Sciences}
+}
+
+*REF:*
+@article{huguet2000mixed,
+  title={Mixed task scheduling and resource allocation problems},
+  author={Huguet, Marie-Jos{\'e} and Lopez, Pierre},
+  journal={Proceedings of CP-AI-OR’00, Paderborn, Germany},
+  pages={71--79},
+  year={2000}
 }
