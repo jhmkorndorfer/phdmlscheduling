@@ -105,7 +105,7 @@ p
 #+RESULTS:
 [[file:img/speedup-with-variability-jonas-diss.pdf]]
 
-** New version Strong SpeedUp
+** Example
 #+begin_src R :results output graphics :file img/finalImgs/strong-speedup-with-variabilityTuring6-jonas-diss.pdf :exports both :width 6 :height 4 :session
 df3 <- read.csv("strong_scalability_data_Dissertation/allTogether_with_Turing_2.csv", sep=" ");
 names(df3) <- c("Time", "Threads", "Disk", "Pinned", "Scalability", "Machine");
@@ -149,7 +149,7 @@ print(p);
 #+RESULTS:
 [[file:img/finalImgs/strong-speedup-with-variabilityTuring6-jonas-diss.pdf]]
 
-** New Version Strong Efficiency
+** Example
 #+begin_src R :results output graphics :file img/finalImgs/strong-efficiecy-with-variabilityTuring6-jonas-diss.pdf :exports both :width 6 :height 4 :session
 df <- read.csv("strong_scalability_data_Dissertation/allTogether_with_Turing_2.csv", header=FALSE, sep=" ")
 names(df) <- c("Time", "Threads", "Disk", "Pinned", "Scalability", "Machine")
@@ -408,4 +408,91 @@ bandwidth, and network communication costs."
   pages={118--127},
   year={2012},
   organization={IEEE}
+}
+** 2018-05-15 A Combined Dual-stage Framework for Robust Scheduling of Scientific Applications in Heterogeneous Environments with Uncertain Availability 2012
+"A dual-stage framework is proposed in this paper to evaluate the
+robustness of efficient resource allocation and dynamic load balancing
+of scientific applications in heterogeneous computing environments with uncertain availability."
+
+"The work presented herein demonstrates that using robust resource
+allocation (RA) heuristics and application load balancing via
+dynamic loop scheduling (DLS) techniques, in concert, will enhance the
+execution of computationally intensive scientific applications in
+uncertain heterogeneous systems."
+
+
+"The goal of this research is to assign applications to heterogeneous
+computing systems and execute them in such a way that all applications
+complete before a common deadline, and their completion times are
+robust against uncertainty in input data and system availability."
+
+"Contribution. The main contribution of this paper is the design of an
+intelligent two-stage framework to solve the problem of allocating
+resources to applications to maximize the probability that the
+applications can complete by a common deadline given uncertainty in
+the input data and system availability, including developing a
+mathematical model of this environment."
+
+*REF:*
+@inproceedings{ciorba2012combined,
+  title={A combined dual-stage framework for robust scheduling of scientific applications in heterogeneous environments with uncertain availability},
+  author={Ciorba, Florina M and Hansen, Timothy and Srivastava, Srishti and Banicescu, Ioana and Maciejewski, Anthony A and Siegel, Howard Jay},
+  booktitle={Parallel and Distributed Processing Symposium Workshops \& PhD Forum (IPDPSW), 2012 IEEE 26th International},
+  pages={193--207},
+  year={2012},
+  organization={IEEE}
+}
+** 2018-05-15 Heuristics for Robust Allocation of Resources to Parallel Applications with Uncertain Execution Times in Heterogeneous Systems with Uncertain Availability 2014
+
+
+
+*REF:*
+@inproceedings{hansen2014heuristics,
+  title={Heuristics for robust allocation of resources to parallel applications with uncertain execution times in heterogeneous systems with uncertain availability},
+  author={Hansen, Timothy and Ciorba, Florina M and Maciejewski, Anthony A and Siegel, Howard Jay and Srivastava, Srishti and Banicescu, Ioana},
+  booktitle={Proceedings of the World Congress on Engineering},
+  volume={1},
+  year={2014}
+}
+** 2018-05-15 An adaptive and hierarchical task scheduling scheme for multi-core clusters 2014
+
+
+*REF:*
+@article{wang2014adaptive,
+  title={An adaptive and hierarchical task scheduling scheme for multi-core clusters},
+  author={Wang, Yizhuo and Zhang, Yang and Su, Yan and Wang, Xiaojun and Chen, Xu and Ji, Weixing and Shi, Feng},
+  journal={Parallel Computing},
+  volume={40},
+  number={10},
+  pages={611--627},
+  year={2014},
+  publisher={Elsevier}
+}
+
+
+
+** 2018-05-15 Multi-stage resource-aware scheduling for data centers with heterogeneous servers 2018
+
+*REF:*
+@article{tran2018multi,
+  title={Multi-stage resource-aware scheduling for data centers with heterogeneous servers},
+  author={Tran, Tony T and Padmanabhan, Meghana and Zhang, Peter Yun and Li, Heyse and Down, Douglas G and Beck, J Christopher},
+  journal={Journal of Scheduling},
+  volume={21},
+  number={2},
+  pages={251--267},
+  year={2018},
+  publisher={Springer}
+}
+* All BibTeX REFs
+*REF:*
+@article{tran2018multi,
+  title={Multi-stage resource-aware scheduling for data centers with heterogeneous servers},
+  author={Tran, Tony T and Padmanabhan, Meghana and Zhang, Peter Yun and Li, Heyse and Down, Douglas G and Beck, J Christopher},
+  journal={Journal of Scheduling},
+  volume={21},
+  number={2},
+  pages={251--267},
+  year={2018},
+  publisher={Springer}
 }
