@@ -203,7 +203,7 @@ incles, not pixels.
 #+begin_src R :results output graphics :file file.pdf :exports both :width 6 :height 4 :session
 
 #+end_src
-* 2018-05-23 Papers PhD Brief
+* 2018-05 Papers PhD Brief
 ** 2018-05-03 Mixed Task Scheduling and Resource Allocation Problems 2000
 (a bit confuse article)
 The paper presents a constraint-based approach for mixed task
@@ -486,6 +486,17 @@ mathematical model of this environment."
   year={2018},
   publisher={Springer}
 }
+* Weekly Reports
+** 2018-05-17 - 2018-05-27
+Studies about schedulers in general;
+Reading of more papers, own research/papers from the Proposal;
+Setting up my new environment, laptop etc;
+Overview about benchmarks, nothing deeply studied yet;
+Remembering my Master presentation.
+
+--------
+Review slides of performance analysis
+Discuss...
 * All BibTeX REFs
 *REF:*
 @article{tran2018multi,
@@ -614,7 +625,3 @@ Measures resource manager performance for Spark (data analysis) workloads in a m
 Simulates multiple users submitting short-duration jobs concurrently to systems managed by a resource manager (such as Apache YARN, Apache Mesos, or IBM Platform Conductor for Spark)
 ** Check!
 chrome-extension://oemmndcbldboiebfnladdacbdfmadadm/http://www-mount.ece.umn.edu/~jjyi/MoBS/2009/program/02E-Bienia.pdf
-* From Location to Location Pattern Privacy 
-h-index?
-Cloaking
-mapas "camuflados" regioes camufladas. para nao revelar a posicao real da pessoa
