@@ -623,5 +623,8 @@ Spark Multi-User Benchmark, SMB, v. 1, 2016
 hub.jazz.net/project/pc4spark/SparkMulti-UserBenchmark-1
 Measures resource manager performance for Spark (data analysis) workloads in a multi-user scenario
 Simulates multiple users submitting short-duration jobs concurrently to systems managed by a resource manager (such as Apache YARN, Apache Mesos, or IBM Platform Conductor for Spark)
+** The Hardware Accelerated Cosmology Code (HACC)
+The code is hybrid MPI-OpenMP and depends on external FFT library
+
 ** Check!
 chrome-extension://oemmndcbldboiebfnladdacbdfmadadm/http://www-mount.ece.umn.edu/~jjyi/MoBS/2009/program/02E-Bienia.pdf
