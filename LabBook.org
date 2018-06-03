@@ -497,6 +497,10 @@ Remembering my Master presentation.
 --------
 Review slides of performance analysis
 Discuss...
+** 2018-05-28 - 2018-06-04
+Weekly report
+This week I worked mainly on the CORAL 2 suit benchmark more specifically over qmcpack. Basically I decided to really start 
+the task 1 now because before I was just looking around by the general literature.
 * All BibTeX REFs
 *REF:*
 @article{tran2018multi,
