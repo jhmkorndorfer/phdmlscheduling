@@ -461,6 +461,57 @@ mathematical model of this environment."
   year={2014}
 }
 ** 2018-05-15 An adaptive and hierarchical task scheduling scheme for multi-core clusters 2014
+This paper introduces an adaptive and hierarchical task scheduling scheme (AHS) for
+multi-core clusters, in which work-stealing and work-sharing are adaptively used to
+achieve load balancing. However, high inter-node communication
+costs hinder work-stealing from being directly performed on distributed memory systems.
+AHS addresses this issue with the following techniques: (1) initial partitioning, which
+reduces the inter-node task migrations; (2) hierarchical scheduling scheme, which
+performs work-stealing inside a node before going across the node boundary and adopts
+work-sharing to overlap computation and communication at the inter-node level; and
+(3) hierarchical and centralized control for inter-node task migration, which improves
+the efficiency of victim selection and termination detection.
+We evaluated AHS and existing work-stealing schemes on a 16-nodes multi-core cluster.
+Experimental results show that AHS outperforms existing schemes by 11–21.4%, for the
+benchmarks studied in this paper.
+
+
+Today, most existing and new cluster systems are multi-core clusters, which present two levels of parallelism. One is
+shared memory parallelism within the cluster node. Another is distributed memory parallelism among the cluster nodes.
+How to exploit both shared and distributed memory parallelism is a critical issue to run a large application efficiently on
+such systems.
+
+
+Work-stealing has been proven to be an effective method for task scheduling on shared memory systems, in which all the
+worker threads have the same priority and victim is selected randomly. However, work-stealing is inefficient when extended
+to distributed memory directly. First, the cost of task transfer between cluster nodes is much higher than between the
+multiple cores within a node. Traditional work-stealing is not optimal for decreasing the number of task migrations. Second,
+the random victim selection results in useless probing, especially when work is sparse. On distributed memory systems, the
+overhead of such probing is not negligible. Third, the thief is idle during work-stealing because of passive stealing. On dis-
+tributed memory system, high latency of task migration would make the thief node inefficient.
+
+To address above issues, we propose AHS, an adaptive and hierarchical task scheduling scheme for multi-core clusters.
+AHS perceives two levels of hierarchy: cluster nodes and multiple cores on each node.
+
+Traditional work-stealing scheme with random victim selection should not be directly used for distributed memory sys-
+tems due to the following two problems. First, random victim selection would result in many times of useless probing when
+work is sparse. It would degrade the performance because the cost of probing is not low in distributed memory system. Sec-
+ond, a thief node only steals work when it becomes idle. During stealing, there is not useful work running on it. This makes
+the thief node inefficient especially when the task migration takes a long time.
+
+
+*Conclusions*
+In this paper, we proposed an adaptive and hierarchical task scheduling scheme (AHS) for multi-core clusters, in which
+work-stealing and work-sharing are used together to achieve dynamic load balancing. We describe a practical implementa-
+tion of AHS, in which a global scheduler makes an initial partitioning of tasks with respect to the pattern of task parallelism,
+and cooperates with local schedulers by message passing. Work-stealing is implemented by the local schedulers to balance
+load between worker threads on a cluster node, and work-sharing is used in conjunction with work-stealing to achieve load
+balancing between the cluster nodes. We present the theoretical, simulation and experimental studies of our technique. The
+results show that work-sharing provides performance benefit and AHS outperforms the existing work-stealing schemes with
+real programs. As future work, we would like to test AHS in a large scale context with more cluster nodes and with some
+other scientific intensive applications. These tests will allow us to better analyze the behavior of AHS.
+
+
 *REF:*
 @article{wang2014adaptive,
   title={An adaptive and hierarchical task scheduling scheme for multi-core clusters},
@@ -501,6 +552,10 @@ Discuss...
 Weekly report
 This week I worked mainly on the CORAL 2 suit benchmark more specifically over qmcpack. Basically I decided to really start 
 the task 1 now because before I was just looking around by the general literature.
+** 2018-06-05 - 2018-06-07
+The benchmarks suite as NAS and CORAL have a lot of applications.
+What should I do, should I study each application? 
+Like download it and go inside the code etc or just consider the papers about the applications.
 * All BibTeX REFs
 *REF:*
 @article{tran2018multi,
