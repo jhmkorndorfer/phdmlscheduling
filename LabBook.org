@@ -450,7 +450,27 @@ mathematical model of this environment."
 }
 ** 2018-05-15 Heuristics for Robust Allocation of Resources to Parallel Applications with Uncertain Execution Times in Heterogeneous Systems with Uncertain Availability 2014
 
+To allocate resources to applications, we propose a new
+batch scheduler. The batch scheduler must allocate resources
+in the presence of the two uncertainties of application
+execution times and system availability. To minimize the
+impact of the two sources of uncertainty on achieving the
+makespan goal, our resource allocations should be robust
+against these uncertainties.
 
+This paper is based on the first stage of the dual-stage
+optimization framework introduced in [10]. In the first stage,
+which is the focus of this paper, a batch of applications is
+allocated resources from a set of heterogeneous processor
+types.
+
+[10] F. M. Ciorba, T. Hansen, S. Srivastava, I. Banicescu, A. A. Ma-
+ciejewski, and H. J. Siegel, “A combined dual-stage framework for
+robust scheduling of scientific applications in heterogeneous environ-
+ments with uncertain availability,” in 21st Heterogeneity in Computing
+Workshop (HCW 2012) in the proceedings of the IEEE International
+Parallel and Distributed Processing Symposium, May 2012, pp. 193–
+207.
 
 *REF:*
 @inproceedings{hansen2014heuristics,
