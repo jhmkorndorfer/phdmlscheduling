@@ -557,6 +557,22 @@ other scientific intensive applications. These tests will allow us to better ana
   year={2018},
   publisher={Springer}
 }
+** 2018-06-08 A combined dual-stage framework for robust scheduling of scientific applications in heterogeneous environments with uncertain availability
+
+
+*REF*
+@INPROCEEDINGS{CombinedDualstageFrameworkScheduling, 
+author={F. M. Ciorba and T. Hansen and S. Srivastava and I. Banicescu and A. A. Maciejewski and H. J. Siegel}, 
+booktitle={2012 IEEE 26th International Parallel and Distributed Processing Symposium Workshops PhD Forum}, 
+title={A Combined Dual-stage Framework for Robust Scheduling of Scientific Applications in Heterogeneous Environments with Uncertain Availability}, 
+year={2012}, 
+volume={}, 
+number={}, 
+pages={193-207}, 
+keywords={natural sciences computing;parallel processing;probability;resource allocation;scheduling;combined dual-stage framework;dynamic load balancing;heterogeneous computing environments;parallel application scheduling;probability maximization;robust dynamic loop scheduling techniques;robust resource allocation heuristics;scientific applications;system make span minimization;uncertain availability;Availability;Dynamic scheduling;Program processors;Resource management;Robustness;Runtime;Uncertainty;dynamic loop scheduling;heterogeneous systems;high performance;non-dedicated systems;resource allocation;robustness;uncertainties}, 
+doi={10.1109/IPDPSW.2012.5}, 
+ISSN={}, 
+month={May},}
 * Weekly Reports
 ** 2018-05-17 - 2018-05-27
 Studies about schedulers in general;
@@ -696,6 +712,21 @@ Like download it and go inside the code etc or just consider the papers about th
   pages={71--79},
   year={2000}
 }
+
+*REF*
+@INPROCEEDINGS{CombinedDualstageFrameworkScheduling, 
+author={F. M. Ciorba and T. Hansen and S. Srivastava and I. Banicescu and A. A. Maciejewski and H. J. Siegel}, 
+booktitle={2012 IEEE 26th International Parallel and Distributed Processing Symposium Workshops PhD Forum}, 
+title={A Combined Dual-stage Framework for Robust Scheduling of Scientific Applications in Heterogeneous Environments with Uncertain Availability}, 
+year={2012}, 
+volume={}, 
+number={}, 
+pages={193-207}, 
+keywords={natural sciences computing;parallel processing;probability;resource allocation;scheduling;combined dual-stage framework;dynamic load balancing;heterogeneous computing environments;parallel application scheduling;probability maximization;robust dynamic loop scheduling techniques;robust resource allocation heuristics;scientific applications;system make span minimization;uncertain availability;Availability;Dynamic scheduling;Program processors;Resource management;Robustness;Runtime;Uncertainty;dynamic loop scheduling;heterogeneous systems;high performance;non-dedicated systems;resource allocation;robustness;uncertainties}, 
+doi={10.1109/IPDPSW.2012.5}, 
+ISSN={}, 
+month={May},}
+
 * Tools list MLS
 ** SMB-1
 Spark Multi-User Benchmark, SMB, v. 1, 2016
