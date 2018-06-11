@@ -557,7 +557,113 @@ other scientific intensive applications. These tests will allow us to better ana
   year={2018},
   publisher={Springer}
 }
-** 2018-06-08 A combined dual-stage framework for robust scheduling of scientific applications in heterogeneous environments with uncertain availability
+** 2018-06-08 A combined dual-stage framework for robust scheduling of scientific applications in heterogeneous environments with uncertain availability 2012
+Scheduling parallel applications on ex-
+isting or emerging computing platforms is challeng-
+ing, and, among other attributes, must be efficient
+and robust
+
+Scientific applications express the solutions to
+complex scientific problems, which often are data-
+parallel and contain large loops. The execution
+of such applications in heterogeneous computing
+environments is computationally intensive and ex-
+hibits an irregular behavior, in general due to
+variations of algorithmic and systemic nature [1,
+ch. 4]. Distribution of input data and variations
+of algorithmic nature cause intrinsic imbalance,
+while variations of systemic nature cause extrinsic
+imbalance [2]. Load imbalance in computationally
+intensive scientific applications is often their ma-
+jor performance degradation factor [1][2]. Tradi-
+tionally, solutions that address load imbalance in
+scientific applications involve dynamic data and/or
+work re-distribution.
+
+The work presented herein demonstrates that
+using robust resource allocation (RA) heuristics [3]
+and application load balancing via dynamic loop
+scheduling (DLS) techniques, in concert, will en-
+hance the execution of computationally intensive
+scientific applications in uncertain heterogeneous
+systems.The goal of this research is to assign
+applications to heterogeneous computing systems
+and execute them in such a way that all applications
+complete before a common deadline, and their
+completion times are robust against uncertainty in
+input data and system availability.
+
+To accomplish this goal, the approach proposed
+herein is to divide the execution of scientific appli-
+cations on heterogeneous computing systems into
+two stages, as outlined in Figure 1:
+
+*Stage I* initial mapping–resources are allocated to
+each application according to a given robust RA
+policy.
+
+*Stage II* runtime application scheduling–the execu-
+tion of each application is optimized, for the set of
+resources allocated in the previous stage, according
+to a given robust application scheduling strategy.
+Initial mapping (IM) can be defined as the prob-
+lem of finding a mapping of a batch of applications
+onto a set of resources to maximize robustness
+against uncertain input data and system availabil-
+ity. Robustness here is defined as the probability
+that applications are completed on the allocated
+resources by a common deadline [4].
+
+*Motivation for Stage I*. The motivation for solv-
+ing the IM problem via robust RA is to avoid the
+runtime resource reallocation problem, i.e., reallo-
+cating resources already assigned to applications to
+avoid violations of the performance objective. The
+robustness of an RA can be quantified as the joint
+probability that all applications will complete by
+their deadline given the uncertain input data and
+system availability.
+
+*Motivation for Stage II*. Just as in stage I, un-
+certain runtime availability of resources allocated
+to an application, as well as uncertain input data,
+are known sources of uncertainty in stage II and 
+may impact the applications execution times. The
+motivation for this stage is based on the assump-
+tion that a specific runtime application scheduling
+(RAS) policy exists that avoids the runtime re-
+source reallocation problem and that satisfies the
+stated performance objective, while possibly allow-
+ing a larger degree of uncertainty in input data and
+system availability.
+
+*Usefulness.* The usefulness of the proposed
+combined dual-stage framework is based on the
+following hypothesis: using an intelligent approach
+in both stages will result in better overall system
+performance than using an intelligent approach
+for either stage in isolation or neither. The dual-
+stage framework allows investigation of the over-
+all degree of tolerable uncertainty, such that the
+desired performance objective is satisfied, for each
+application individually and the entire collection of
+applications running on the heterogeneous comput-
+ing system.
+
+*Contribution.* The main contribution of this pa-
+per is the design of an intelligent two-stage frame-
+work to solve the problem of allocating resources
+to applications to maximize the probability that the
+applications can complete by a common deadline
+given uncertainty in the input data and system
+availability, including developing a mathematical
+model of this environment.
+
+*Makespan*
+If we let Shmuel feed all goats, then the makespan is 30 (3×10 for Shmuel, 0 for Shifra);
+If we let Shifra feed one goat and Shmuel two goats, then the makespan is 20 (2×10 for Shmuel, 12 for Shifra);
+If we let Shifra feed two goats and Shmuel one goat, then the makespan is 24 (2×12 for Shifra, 10 for Shmuel);
+If we let Shifra feed all goats, then the makespan is 36 (3×12 for Shifra).
 
 
 *REF*
@@ -592,6 +698,11 @@ the task 1 now because before I was just looking around by the general literatur
 The benchmarks suite as NAS and CORAL have a lot of applications.
 What should I do, should I study each application? 
 Like download it and go inside the code etc or just consider the papers about the applications.
+** 2018-06-07 - 2018-06-11
+Professor Florina, this week I decide to go back and study a bit more considering the references from the papers you sent me to read. 
+I was not feeling well focusing on an aplicattion (CORAL -> QMCPACK, last week) without knowing exactly what  I was looking for.
+I am heaving several doubts about the task 1 as a whole. Maybe we should talk about it.
+Tomorrow I should send you a more detailed email about what are my questions and what is my proposal. I still thinking about it.
 * All BibTeX REFs
 *REF:*
 @article{tran2018multi,
