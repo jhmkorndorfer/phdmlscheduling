@@ -727,7 +727,7 @@ Tomorrow I should send you a more detailed email about what are my questions and
 
 Think about the group "images".
 
-chapter 2 workload 
+Chapter 2 workload 
 SPEC Benchmark
 Consider Aplications with MPI and OPENMP
 Overall Survey
