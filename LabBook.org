@@ -731,7 +731,7 @@ Chapter 2 workload
 SPEC Benchmark
 Consider Aplications with MPI and OPENMP
 Overall Survey
-
+LOOK WORKLOAD PPT
 
 * All BibTeX REFs
 *REF:*
