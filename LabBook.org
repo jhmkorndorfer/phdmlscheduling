@@ -546,6 +546,26 @@ other scientific intensive applications. These tests will allow us to better ana
 
 ** 2018-05-15 Multi-stage resource-aware scheduling for data centers with heterogeneous servers 2018
 
+This paper presents a three-stage algorithm for
+resource-aware scheduling of computational jobs in a large-
+scale heterogeneous data center. The algorithm aims to
+allocate job classes to machine configurations to attain an
+efficient mapping between job resource request profiles and
+machine resource capacity profiles. The first stage uses a
+queueing model that treats the system in an aggregated man-
+ner with pooled machines and jobs represented as a fluid
+flow. The latter two stages use combinatorial optimization
+techniques to solve a shorter-term, more accurate represen-
+tation of the problem using the first-stage, long-term solution
+for heuristic guidance.
+
+We present experimental results of our algorithm
+on both Google workload trace data and generated data and
+show that it outperforms existing schedulers. These results
+illustrate the importance of considering heterogeneity of both
+job and machine configuration profiles in making effective
+scheduling decisions.
+
 *REF:*
 @article{tran2018multi,
   title={Multi-stage resource-aware scheduling for data centers with heterogeneous servers},
@@ -703,6 +723,16 @@ Professor Florina, this week I decide to go back and study a bit more considerin
 I was not feeling well focusing on an aplicattion (CORAL -> QMCPACK, last week) without knowing exactly what  I was looking for.
 I am heaving several doubts about the task 1 as a whole. Maybe we should talk about it.
 Tomorrow I should send you a more detailed email about what are my questions and what is my proposal. I still thinking about it.
+
+
+Think about the group "images".
+
+chapter 2 workload 
+SPEC Benchmark
+Consider Aplications with MPI and OPENMP
+Overall Survey
+
+
 * All BibTeX REFs
 *REF:*
 @article{tran2018multi,
