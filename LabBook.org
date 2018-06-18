@@ -735,8 +735,14 @@ LOOK WORKLOAD PPT
 
 ** 2018-06-11 - 2018-06-18
 Professor Florina,
-This week I worked on the table I send you with some features of each application from benchmark suites. It is not ready yet but it is going well, I am already selecting some benchmark applications for further and more detailed studies. As soon as I finish the table with the applications I intend to instam them in our cluster just to be sure that they will be useful. 
+This week I worked on the table I send you with some features of each application from benchmark suites. It is not ready yet but it is going well, I am already selecting some benchmark applications 
+for further and more detailed studies. As soon as I finish the table with the applications I intend to install them in our cluster just to be sure that they will be useful. 
 Finally I want to deeply study them to get the information like scheduling type, "independent tasks and with data dependent tasks", "irregular task execution times" etc.
+
+
+Next meetings - july 9 - 15h 
+
+
 * All BibTeX REFs
 *REF:*
 @article{tran2018multi,
