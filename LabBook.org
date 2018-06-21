@@ -1,4 +1,4 @@
-#+TITLE: Labbook Jonas PhD on MLS 
+#+TITLE: Labbook Jonas PhD on MLS Project
 #+LATEX_HEADER: \usepackage[margin=2cm,a4paper]{geometry}
 #+STARTUP: overview indent
 #+TAGS: Jonas(J) noexport(n) deprecated(d)
@@ -742,7 +742,11 @@ Finally I want to deeply study them to get the information like scheduling type,
 
 Next meetings - july 9 - 15h 
 
-
+* Visitors
+** Prof. Allen Malony, University of Oregon 2018-06
+TAU performance analisys.
+Adaptive openmp loop scheduling
+UPMLIB: A Runtime System for Tuning the Memory Performance of OpenMP Programs on Scalable Shared-Memory Multiprocessors 2000
 * All BibTeX REFs
 *REF:*
 @article{tran2018multi,
@@ -878,7 +882,8 @@ doi={10.1109/IPDPSW.2012.5},
 ISSN={}, 
 month={May},}
 
-* Tools list MLS
+* CANCELLED Tools list MLS                                       :deprecated:
+- State "CANCELLED"  from              [2018-06-21 Do 16:28]
 ** SMB-1
 Spark Multi-User Benchmark, SMB, v. 1, 2016
 hub.jazz.net/project/pc4spark/SparkMulti-UserBenchmark-1
