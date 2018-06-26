@@ -742,6 +742,27 @@ Finally I want to deeply study them to get the information like scheduling type,
 
 Next meetings - july 9 - 15h 
 
+** 2018-06-18 - 2018-06-25 
+I still working on the table but there are much more data to add. Last week I also spent some time translating the last documents that the university is requiring for my registration. 
+I will give this to them tomorrow since they are already closed now and I also want to make an authenticated copy of one of the translations since it is a official one and costs a lot hehe.
+
+PASC update: I have received my schedule for PASC and it is really good. I will be able to attend the poster session and I will be working on the room of 
+"SPH-EXA: OPTIMIZING SMOOTH PARTICLE HYDRODYNAMICS FOR EXASCALE COMPUTING".
+
+PASC schedule:
+Monday, July 2, 2018 
+07:45 - 09:00 Foyer 2 nd Floor Orientation session
+12:40 – 15:00 Room Sydney > Help speakers
+
+Tuesday, July 3, 2018
+13:10 – 15:30 Room Nairobi > Help speakers 
+
+Wednesday, July 4, 2018
+11:00 – 13:15 Room Osaka > Help speakers
+14:00 – 16:15 Room Sydney > Help speakers
+
+
+For the next week I will keep working on the table.
 * Visitors
 ** Prof. Allen Malony, University of Oregon 2018-06
 TAU performance analisys.
