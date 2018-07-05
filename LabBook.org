@@ -699,6 +699,33 @@ keywords={natural sciences computing;parallel processing;probability;resource al
 doi={10.1109/IPDPSW.2012.5}, 
 ISSN={}, 
 month={May},}
+** 2018-07-05 Exploring the Relation Between Two Levels ofScheduling Using a Novel Simulation Approach 2017
+
+The present work explores the relation between two scheduling levels: batch and application. To understand and explore this relation, a novel simulation approach is presented
+that bridges two existing simulators from the two scheduling levels. A novel two-level simulator that implements the proposed
+approach is introduced. The two-level simulator is used to simulate all combinations of three batch scheduling and four
+application scheduling algorithms from the literature. These combinations are considered for allocating resources and executing
+the parallel jobs from a workload of a production HPC system.
+
+
+
+
+
+
+*REF*
+@INPROCEEDINGS{TwolevelSchedulingAhmed, 
+author={A. Eleliemy and A. Mohammed and F. M. Ciorba}, 
+booktitle={2017 16th International Symposium on Parallel and Distributed Computing (ISPDC)}, 
+title={Exploring the Relation between Two Levels of Scheduling Using a Novel Simulation Approach}, 
+year={2017}, 
+volume={}, 
+number={}, 
+pages={26-33}, 
+keywords={parallel processing;scheduling;application scheduling algorithms;batch scheduling;modern high performance computing systems;novel simulation approach;respective level;scheduling levels;two-level simulator;Computational modeling;Hardware;Scheduling;Scheduling algorithms;Alea;Application level scheduling;Batch level scheduling;GridSim;High performance computing;OTF2;SimDag;SimGrid;Two-level scheduling;Vampir.}, 
+doi={10.1109/ISPDC.2017.23}, 
+ISSN={}, 
+month={July},}
+
 * Weekly Reports
 ** 2018-05-17 - 2018-05-27
 Studies about schedulers in general;
@@ -773,6 +800,7 @@ TAU performance analisys.
 Adaptive openmp loop scheduling
 UPMLIB: A Runtime System for Tuning the Memory Performance of OpenMP Programs on Scalable Shared-Memory Multiprocessors 2000
 * All BibTeX REFs
+
 *REF:*
 @article{tran2018multi,
   title={Multi-stage resource-aware scheduling for data centers with heterogeneous servers},
@@ -906,6 +934,20 @@ keywords={natural sciences computing;parallel processing;probability;resource al
 doi={10.1109/IPDPSW.2012.5}, 
 ISSN={}, 
 month={May},}
+
+*REF*
+@INPROCEEDINGS{TwolevelSchedulingAhmed, 
+author={A. Eleliemy and A. Mohammed and F. M. Ciorba}, 
+booktitle={2017 16th International Symposium on Parallel and Distributed Computing (ISPDC)}, 
+title={Exploring the Relation between Two Levels of Scheduling Using a Novel Simulation Approach}, 
+year={2017}, 
+volume={}, 
+number={}, 
+pages={26-33}, 
+keywords={parallel processing;scheduling;application scheduling algorithms;batch scheduling;modern high performance computing systems;novel simulation approach;respective level;scheduling levels;two-level simulator;Computational modeling;Hardware;Scheduling;Scheduling algorithms;Alea;Application level scheduling;Batch level scheduling;GridSim;High performance computing;OTF2;SimDag;SimGrid;Two-level scheduling;Vampir.}, 
+doi={10.1109/ISPDC.2017.23}, 
+ISSN={}, 
+month={July},}
 
 * CANCELLED Tools list MLS                                       :deprecated:
 - State "CANCELLED"  from              [2018-06-21 Do 16:28]
