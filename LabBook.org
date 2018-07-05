@@ -708,6 +708,8 @@ application scheduling algorithms from the literature. These combinations are co
 the parallel jobs from a workload of a production HPC system.
 
 
+As a preliminary step for the work in the present paper,the original Alea simulator [12] has beenredesignedandreimplementedto support ALS algorithms in addition to BLSalgorithms, in [3]. 
+
 
 
 
