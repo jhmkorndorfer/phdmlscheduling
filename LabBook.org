@@ -729,7 +729,6 @@ ISSN={},
 month={July},}
 
 ** 2018-07-06 Efficient Generation of Parallel Spin-images UsingDynamic Loop Scheduling 2017
-
  Thiswork  introduces  an  efficient  version  of  the  parallel  spin-image
 algorithm  (PSIA),  called  EPSIA.  The  PSIA  is  a  parallel  version
 of   the   spin-image   algorithm   (SIA).   The   (P)SIA   is   used   in
@@ -747,6 +746,8 @@ outperforms  the  performance  of  the  PSIA  by  a  factor  of  1.2
 and 2 for homogeneous and heterogeneous computing resources, respectively.
 
 
+
+
 *REF*
 @INPROCEEDINGS{ParallelSpinimagesDynamicLScheduling, 
   author={A. Eleliemy and A. Mohammed and F. M. Ciorba}, 
@@ -762,6 +763,23 @@ and 2 for homogeneous and heterogeneous computing resources, respectively.
   month={Dec},
 }
 
+** 2018-07-06 Experimental Verification and Analysis ofDynamic Loop Scheduling in Scientific Applications 2018
+In  thepresent work, a methodology is devised to answer this question.It  involves  the  experimental  verification  and  analysis  of  the
+performance  of  DLS  in  scientific  applications.  The  proposedmethodology   is   employed   for   a   computer   vision   application
+executing using four DLS techniques on two different HPC plat-forms, both via native and simulative experiments. The evaluation
+and analysis of the native and simulative results indicate that theaccuracy of the simulative experiments is strongly influenced by
+the  approach  used  to  extract  the  computational  effort  of  theapplication  (FLOP-  or  time-based),  the  choice  of  application
+model representation into simulation (data or task parallel), and the available HPC subsystem models in the simulator (multi-core
+CPUs, memory hierarchy, and network topology). The minimumand the maximum percent errors achieved between the native and
+the  simulative  experiments  are 0.95% and 8.03%,  respectively.
+
+*REF*
+@article{mohammed2018experimental,
+  title={Experimental Verification and Analysis of Dynamic Loop Scheduling in Scientific Applications},
+  author={Mohammed, Ali and Eleliemy, Ahmed and Ciorba, Florina M and Kasielke, Franziska and Banicescu, Ioana},
+  journal={arXiv preprint arXiv:1804.11115},
+  year={2018}
+}
 * Weekly Reports
 ** 2018-05-17 - 2018-05-27
 Studies about schedulers in general;
