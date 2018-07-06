@@ -5,6 +5,9 @@
 #+EXPORT_SELECT_TAGS: export
 #+EXPORT_EXCLUDE_TAGS: noexport
 #+SEQ_TODO: TODO(t!) STARTED(s!) WAITING(w!) | DONE(d!) CANCELLED(c!) DEFERRED(f!)
+* IMPORTANT NOTES
+** Example: A lot of cores are already available (left side of the figure), however the whole 'job 1542' only ends after that, preventing 'job 1543' to start. If the schedulers communicate between the different levels, maybe they can make better decisions.
+[[file:~/Pictures/Screenshot%20from%202018-07-05%2015-52-54.png][Graph Vampir Timeline]]
 * Description of the experimental platform
   + Describe 
   + Describe 
@@ -700,19 +703,16 @@ doi={10.1109/IPDPSW.2012.5},
 ISSN={}, 
 month={May},}
 ** 2018-07-05 Exploring the Relation Between Two Levels ofScheduling Using a Novel Simulation Approach 2017
-
 The present work explores the relation between two scheduling levels: batch and application. To understand and explore this relation, a novel simulation approach is presented
 that bridges two existing simulators from the two scheduling levels. A novel two-level simulator that implements the proposed
 approach is introduced. The two-level simulator is used to simulate all combinations of three batch scheduling and four
 application scheduling algorithms from the literature. These combinations are considered for allocating resources and executing
 the parallel jobs from a workload of a production HPC system.
 
-
 As a preliminary step for the work in the present paper,the original Alea simulator [12] has beenredesignedandreimplementedto support ALS algorithms in addition to BLSalgorithms, in [3]. 
 
-
-
-
+Example: A lot of cores are already available (left side of the figure), however the whole 'job 1542' only ends after that, preventing 'job 1543' to start. If the schedulers communicate between the different levels, maybe they can make better decisions. 
+[[file:~/Pictures/Screenshot%20from%202018-07-05%2015-52-54.png][Graph Vampir TimeLine]]
 
 *REF*
 @INPROCEEDINGS{TwolevelSchedulingAhmed, 
@@ -727,6 +727,40 @@ keywords={parallel processing;scheduling;application scheduling algorithms;batch
 doi={10.1109/ISPDC.2017.23}, 
 ISSN={}, 
 month={July},}
+
+** 2018-07-06 Efficient Generation of Parallel Spin-images UsingDynamic Loop Scheduling 2017
+
+ Thiswork  introduces  an  efficient  version  of  the  parallel  spin-image
+algorithm  (PSIA),  called  EPSIA.  The  PSIA  is  a  parallel  version
+of   the   spin-image   algorithm   (SIA).   The   (P)SIA   is   used   in
+various  domains,  such  as  3D  object  recognition,  categorization,
+and  3D  face  recognition.  EPSIA  refers  to  the  extended  version  of  
+the  PSIA  that  integrates  various  well-known  dynamic
+loop  scheduling  (DLS)  techniques.  The  present  work:  (1)  Proposes  EPSIA,  
+a  novel  flexible  version  of  PSIA;  (2)  Showcases
+the   benefits   of   applying   DLS   techniques   for   optimizing   the
+performance  of  the  PSIA;  (3)  Assesses  the  performance  of  the
+proposed  EPSIA  by  conducting  several  scalability  experiments.
+The  performance  results  are  promising  and  show  that  using
+well-known   DLS   techniques,   the   performance   of   the   EPSIA
+outperforms  the  performance  of  the  PSIA  by  a  factor  of  1.2
+and 2 for homogeneous and heterogeneous computing resources, respectively.
+
+
+*REF*
+@INPROCEEDINGS{ParallelSpinimagesDynamicLScheduling, 
+  author={A. Eleliemy and A. Mohammed and F. M. Ciorba}, 
+  booktitle={2017 IEEE 19th International Conference on High Performance Computing and Communications Workshops (HPCCWS)}, 
+  title={Efficient Generation of Parallel Spin-images Using Dynamic Loop Scheduling}, 
+  year={2017}, 
+  volume={}, 
+  number={}, 
+  pages={34-41}, 
+  keywords={face recognition;object recognition;parallel processing;scheduling;stereo image processing;3D face recognition;3D object recognition;DLS techniques;EPSIA;PSIA;dynamic loop scheduling techniques;heterogeneous computing resources;high performance computing systems;homogeneous computing resources;modern HPC systems;novel flexible version;parallel spin-image algorithm;parallel spin-images;parallel version;Dynamic scheduling;Heterogeneous networks;Processor scheduling;Scalability;Three-dimensional displays;Dynamic-loop-scheduling;Efficient-performance;Factoring;Guided-self-scheduling;Self-scheduling;Spin-image-algorithm;Static-loop-scheduling}, 
+  doi={10.1109/HPCCWS.2017.00012}, 
+  ISSN={}, 
+  month={Dec},
+}
 
 * Weekly Reports
 ** 2018-05-17 - 2018-05-27
@@ -802,6 +836,21 @@ TAU performance analisys.
 Adaptive openmp loop scheduling
 UPMLIB: A Runtime System for Tuning the Memory Performance of OpenMP Programs on Scalable Shared-Memory Multiprocessors 2000
 * All BibTeX REFs
+
+*REF*
+@INPROCEEDINGS{ParallelSpinimagesDynamicLScheduling, 
+  author={A. Eleliemy and A. Mohammed and F. M. Ciorba}, 
+  booktitle={2017 IEEE 19th International Conference on High Performance Computing and Communications Workshops (HPCCWS)}, 
+  title={Efficient Generation of Parallel Spin-images Using Dynamic Loop Scheduling}, 
+  year={2017}, 
+  volume={}, 
+  number={}, 
+  pages={34-41}, 
+  keywords={face recognition;object recognition;parallel processing;scheduling;stereo image processing;3D face recognition;3D object recognition;DLS techniques;EPSIA;PSIA;dynamic loop scheduling techniques;heterogeneous computing resources;high performance computing systems;homogeneous computing resources;modern HPC systems;novel flexible version;parallel spin-image algorithm;parallel spin-images;parallel version;Dynamic scheduling;Heterogeneous networks;Processor scheduling;Scalability;Three-dimensional displays;Dynamic-loop-scheduling;Efficient-performance;Factoring;Guided-self-scheduling;Self-scheduling;Spin-image-algorithm;Static-loop-scheduling}, 
+  doi={10.1109/HPCCWS.2017.00012}, 
+  ISSN={}, 
+  month={Dec},
+}
 
 *REF:*
 @article{tran2018multi,
