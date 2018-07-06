@@ -773,6 +773,14 @@ model representation into simulation (data or task parallel), and the available 
 CPUs, memory hierarchy, and network topology). The minimumand the maximum percent errors achieved between the native and
 the  simulative  experiments  are 0.95% and 8.03%,  respectively.
 
+Loop  scheduling.There  are  two  main  categories  of  loop scheduling techniques:  static and dynamic. The  essential 
+difference between static and dynamic loop scheduling is the time when  the  scheduling  decisions  are  taken.  Static  scheduling
+techniques, such as block, cyclic, and block-cyclic [10], divide and assign the loop iterations (or tasks) across the processing
+elements  before  the  loop  executes.  The  tasks  division  andassignment do not change during execution. In this work, block
+scheduling is considered and is denoted as STATIC. Dynamic  loop  scheduling  (DLS)  techniques  divide  and
+self-schedule  the  loop  iterations  during  the  execution  of  theloop.  As  a  result,  DLS  techniques  balance  the  execution  of
+the loop iterations at the cost of increased overhead comparedto the static techniques. 
+
 *REF*
 @article{mohammed2018experimental,
   title={Experimental Verification and Analysis of Dynamic Loop Scheduling in Scientific Applications},
