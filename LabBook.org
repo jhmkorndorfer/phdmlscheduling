@@ -831,7 +831,7 @@ Finally I want to deeply study them to get the information like scheduling type,
 
 Next meetings - july 9 - 15h 
 
-** 2018-06-18 - 2018-06-25 
+** 2018-06-18 - 2018-06-25
 I still working on the table but there are much more data to add. Last week I also spent some time translating the last documents that the university is requiring for my registration. 
 I will give this to them tomorrow since they are already closed now and I also want to make an authenticated copy of one of the translations since it is a official one and costs a lot hehe.
 
@@ -856,6 +856,16 @@ For the next week I will keep working on the table.
 So I still working on the table. For the next week I will have a better update. Probably I will start to study the applications in more detail. 
 I think that I already have enough applications in the table and also these are the best documented ones.
 
+** 2018-06-25 - 2018-07-04
+So I still working on the table. For the next week I will have a better update. Probably I will start to study the applications in more detail. 
+I think that I already have enough applications in the table and also these are the best documented ones.
+** 2018-07-04 - 2018-07-09
+- Weekly report
+So during the last week I did not add things to the table. During PASC I talked a little with Ali and he send me 4 papers that he and Ahmed write and basically the reading of this papers was what I did last Thursday and Friday. To be true I still need to read one (Performance Reproduction and Prediction of Selected Dynamic Loop Scheduling Experiments). For me it was a really nice progress specially with the first paper (Exploring the Relation Between Two Levels of Scheduling Using a Novel Simulation Approach) together with a talk with Ahmed that helped me to understand much better the project. 
+For the next weeks I would like to start studding the applications in more details. I will select some, (this selection still confuse to me, I think that I will be able to effectively select them only after a more detailed study) and do a better research over them. Then I plan to make a small summary (maybe 1 page) for each with such details. For now I am not sure yet If I will do such "detailed research" considering look at the code and/or installing the applications or if I will do this only looking for papers using/describing the application etc.
+
+- PASC18
+It was a very interesting experience for me, I mean it was the first time I was working as volunteer and not presenting something, but the experience and knowledge of how thing work "behind the scene" is very nice. Furthermore especially for me it was a very good opportunity to know and understand in what my colleagues are working. 
 * Visitors
 ** Prof. Allen Malony, University of Oregon 2018-06
 TAU performance analisys.
