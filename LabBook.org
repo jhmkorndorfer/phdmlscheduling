@@ -20,7 +20,7 @@ scheduling is considered and is denoted as STATIC.
 Dynamic loop scheduling. The loop scheduling techniques
 considered  in  this  work  can  be  classified  into  static  and
 dynamic.  Using  straight forward  parallelization  (denoted  as STATIC),
- the parallel loop iterations are divided into equally-sized  chunks.  A  processor  is  assigned
+the parallel loop iterations are divided into equally-sized  chunks.  A  processor  is  assigned
 exactly  one  chunk of iterations  equal  to  the  overall  number  of  loop  iterations
 N divided  by  the  number  of  available  processing  elements
 P.STATIC  has  a  very  low  scheduling  overheadh,  bounded
@@ -920,6 +920,12 @@ applications or if I will do this only looking for papers using/describing the a
 - PASC18
 It was a very interesting experience for me, I mean it was the first time I was working as volunteer and not presenting something, but the experience and knowledge of how thing work "behind the scene" is very nice. Furthermore 
 especially for me it was a very good opportunity to know and understand in what my colleagues are working. 
+
+***START WITH***
+*SPEC MPI*
+*NAS MPI*
+
+AHMED REVIEW
 
 * Visitors
 ** Prof. Allen Malony, University of Oregon 2018-06
