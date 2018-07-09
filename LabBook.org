@@ -10,23 +10,23 @@
 [[file:~/Pictures/Screenshot%20from%202018-07-05%2015-52-54.png][Graph Vampir Timeline]]
 ** Scheduling examples
 There  are  two  main  categories  of  loop scheduling techniques:  static and dynamic. 
-The  essential dif-ference between static and dynamic loop scheduling is the time
+The  essential difference between static and dynamic loop scheduling is the time
 when  the  scheduling  decisions  are  taken.  Static  scheduling
 techniques, divide and assign the loop iterations (or tasks) across the processing
 elements  before  the  loop  executes.  The  tasks  division  and
 assignment do not change during execution. In this work, block
 scheduling is considered and is denoted as STATIC.
 
-Dynamic loop scheduling.The loop scheduling techniques
+Dynamic loop scheduling. The loop scheduling techniques
 considered  in  this  work  can  be  classified  into  static  and
-dynamic.  Using  straightforward  parallelization  (denoted  as STATIC),
+dynamic.  Using  straight forward  parallelization  (denoted  as STATIC),
  the parallel loop iterations are divided into equally-sized  chunks.  A  processor  is  assigned
-exactly  one  chunkofiterations  equal  to  the  overall  number  of  loop  iterations
+exactly  one  chunk of iterations  equal  to  the  overall  number  of  loop  iterations
 N divided  by  the  number  of  available  processing  elements
 P.STATIC  has  a  very  low  scheduling  overheadh,  bounded
 above by P. Application performance may be degraded due to  load  imbalance 
 if  the  execution  of  the  loop  iterations  is characterized by high variability.
- Self-scheduling [5] (SS), is a dynamic loop scheduling technique, at the other scheduling
+Self-scheduling [5] (SS), is a dynamic loop scheduling technique, at the other scheduling
 extreme,  whereby  a  processing  element  obtains  a  chunk consisting of exactly one 
 loop iteration whenever it becomes available  and  requests  work.  When  all  loop  iterations  havebeen  
 self-scheduled,  the  processors  finish  their  execution  at virtually the same time 
@@ -34,20 +34,27 @@ due to the fine-grain self-balancing ofthe  workload.  Scheduling  a  single  lo
 leads  to  increased  scheduling  overhead  over  STATIC  and potentially  to  an  overall  completion  
 time  greater  than  the optimal time.
 
-*Static scheduling techniques*, divide and assign the loop iterations (or tasks) across the processing
-elements  before  the  loop  executes.  The  tasks  division  and
-assignment do not change during execution.
-*Block scheduling* divide the loop into chunks of same size for each processing unit, basically N iterations/N processors
-*Cyclic scheduling* assigns loop iterations to pro- cessors in a cyclic order, so that processor p will ex- ecute the iterations 
+*** *Static scheduling techniques*
+These techniques divide and assign the loop iterations (or tasks) across the processing
+elements  before  the  loop  executes.  The  tasks  division  and assignment do not change during execution.
+
+**** *Block scheduling* 
+This divide the loop into chunks of same size for each processing unit, basically N iterations/N processors.
+
+**** *Cyclic scheduling*  
+This assigns loop iterations to pro- cessors in a cyclic order, so that processor p will ex- ecute the iterations
 p, p + P, p + 2P, . . . , where P is again the number of processors executing the loop.
-*Block cyclic scheduling* is a compromise be- tween block scheduling and cyclic scheduling. This algorithm assigns blocks of a 
+
+**** *Block cyclic scheduling*  
+This is a compromise between block scheduling and cyclic scheduling. This algorithm assigns blocks of a
 fixed size to processors in a round robin  fashion. If the block  size is equal to one, then block-cyclic scheduling  degenerates 
 to cyclic scheduling and if the block size is rN/Pl, then block-cyclic scheduling is same as block scheduling. Hence, block 
 cyclic scheduling forms a continuum be tween block and cyclic scheduling algorithms.
 
 
+*** *Dynamic scheduling techniques*
+These techniques make the tasks division and assignment during execution.
 
-*Dynamic scheduling techniques*,
 
 * Description of the experimental platform
   + Describe 
