@@ -12,8 +12,7 @@
 There  are  two  main  categories  of  loop scheduling techniques:  static and dynamic. 
 The  essential dif-ference between static and dynamic loop scheduling is the time
 when  the  scheduling  decisions  are  taken.  Static  scheduling
-techniques, such as block, cyclic, and block-cyclic [10], divide
-and assign the loop iterations (or tasks) across the processing
+techniques, divide and assign the loop iterations (or tasks) across the processing
 elements  before  the  loop  executes.  The  tasks  division  and
 assignment do not change during execution. In this work, block
 scheduling is considered and is denoted as STATIC.
@@ -35,8 +34,21 @@ due to the fine-grain self-balancing ofthe  workload.  Scheduling  a  single  lo
 leads  to  increased  scheduling  overhead  over  STATIC  and potentially  to  an  overall  completion  
 time  greater  than  the optimal time.
 
+*Static scheduling techniques*, divide and assign the loop iterations (or tasks) across the processing
+elements  before  the  loop  executes.  The  tasks  division  and
+assignment do not change during execution.
+*Block scheduling* divide the loop into chunks of same size for each processing unit, basically N iterations/N processors
+*Cyclic scheduling* assigns loop iterations to pro- cessors in a cyclic order, so that processor p will ex- ecute the iterations 
+p, p + P, p + 2P, . . . , where P is again the number of processors executing the loop.
+*Block cyclic scheduling* is a compromise be- tween block scheduling and cyclic scheduling. This algorithm assigns blocks of a 
+fixed size to processors in a round robin  fashion. If the block  size is equal to one, then block-cyclic scheduling  degenerates 
+to cyclic scheduling and if the block size is rN/Pl, then block-cyclic scheduling is same as block scheduling. Hence, block 
+cyclic scheduling forms a continuum be tween block and cyclic scheduling algorithms.
 
-Block scheduling
+
+
+*Dynamic scheduling techniques*,
+
 * Description of the experimental platform
   + Describe 
   + Describe 
